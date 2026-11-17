@@ -1,0 +1,305 @@
+{
+    "es": {
+        "idiomaToggle": "./imgs/flagMex.webp",
+
+        "homeNav": "Home",
+        "aboutUsNav": "About Us",
+        "teamNav": "Our Team",
+        "servicesNav": "Services",
+        "whySellNav":"Why sell at STLA?",
+        "onlineNav": "Online Bidding",
+        "sellingNav":"Selling Process",
+        "marketReportsNav":"Market Reports",
+        "calendarNav":"Calendar",
+
+
+        "subTitleHome": "The Only Mexican Cattle Auction in the United States.",
+
+        "aboutIntroText": "Santa Teresa Livestock Auction is the only international livestock auction in the United States — proudly specializing in stocker and feeder cattle from Mexico.",
+        "aIntroText": "Learn More",
+
+        "ourServicesTitle": "Our Services",
+        "ourServicesText": "Operating with the efficiency, transparency, and integrity that define us, we offer a complete suite of services designed to facilitate international livestock trade.",
+        "ourServicesA": "Learn More",
+
+        "bidOnlineText": "View Online/Bid Online",
+
+        "slogan1": "Where good cattle meet good buyers.",
+
+        "membersOfTittle": "We are proud members of:",
+        "proudlyWorkingTitle": "Proudly Working with:",
+
+        "contactInfoTitle": "Contact Info",
+        "envianosMensaje": "Send us a message",
+        "name": "Name *",
+        "email": "Email *",
+        "phone": "Phone *",
+        "message": "Message *",
+        "send": "Send",
+
+        "slogan2": "Where the Border is just the Beginning.",
+
+
+
+        "aboutUsTitle":"ABOUT US",
+        "titleAboutUs": "Your U.S. Gateway for Mexican Feeder Cattle",
+        "textAboutUs": "Santa Teresa Livestock Auction is the only international livestock auction in the United States — proudly specializing in stocker and feeder cattle from Mexico.",
+        "textAboutUs2": "We are a producer-owned company, operating under a concession agreement managed by experienced American livestock operators, ensuring every transaction is handled with professionalism, transparency, and efficiency. We ensure your cattle are in the best hands by providing high-quality fresh feed made with the finest ingredients available in the region. All cattle sold through our auction are located on the U.S. side, having passed rigorous health inspections conducted by both Mexican authorities and the USDA.",
+
+        "guaranteedTitle": "Guaranteed Health.",
+        "guaranteedTitle2": "Ready to Ship.",
+        "guaranteedText": "This guarantees that each animal meets the highest health and export standards — ready to buy and ready to ship. “With years of cross–border experience, we bridge producers and buyers with integrity, efficiency, and trust.”",
+
+        "misionTitle": "Mission",
+        "misiontext": "Connect Mexican cattle producers with American buyers through a trusted, efficient, and border–friendly marketplace that strengthens international trade and supports the livestock industry on both sides of the border.",
+        "visionTitle": "Vision",
+        "visiontext": "To unite producers, buyers, and communities across borders through honest trade, hard work, and a shared passion for the livestock industry.",
+
+        "auctionScheduleTitle": "Auction Schedule",
+        "auctionScheduleSubtitle": "Weekly Livestock Auctions – Mexican Heifers and Steers",
+        "auctionScheduleText1": "Tuesday: 11:00 A.M. M.S.T (Seasonal)",
+        "auctionScheduleText2": "Friday: 11:00 A.M. M.S.T",
+        "auctionScheduleBtn": "Visit Livestock Auctions",
+
+
+
+        "ourTeamTitle":"OUR TEAM",
+        "textTeam": "Meet the dedicated team behind Santa Teresa Livestock Auction, united by a passion for livestock and a commitment to honest, hardworking trade across borders.",
+        "officeManager": "Office Manager",
+        "livestockManager": "Livestock Operations Manager",
+        "auctionSpecialist": "Auction Administration Specialist",
+        "cattleTrade": "Cattle Trade Relations Specialist",
+
+
+
+        "servicesTitle": "SERVICES",
+        "textServices":"We manage every detail of the cross–border transaction. Our services cover all logistics, regulatory compliance, and financial processing to ensure a transparent, efficient, and trusted operation for buyers and producers.",
+        "ExportText":"Export Requirements for Mexican Cattle.",
+        "CattleText":"Cattle Sorting.",
+        "HaulingText":"Hauling Logistics to Sellers and Buyers.",
+        "OnlineText":"Online Bidding Support.",
+        "PaymentsText":"All payments handled – Brokers, Vet, Livestock Board and Union – for streamline, trusted operations under USDA guidelines.",
+        "HealthText":"Health Certificates and Documentation Support.",
+        "CattleProfessionallyText":"Your cattle, professionally marketed to in – house and online buyers from all across the United States.",
+
+
+
+        "onlineBiddingTitle":"ONLINE BIDDING",
+        "buyTittle": "Buy and Sell cattle — from anywhere.",
+        "buyText": "At Santa Teresa Livestock Auction, you don’t need to be ring side to take part in the action. Our Online Bidding Platform lets you watch the live sale, bid in real time, and manage your purchases securely from your phone, tablet, or computer.",
+
+        "howKorksTitle":"How it works?",
+        "sellingTitle":"Selling Process",
+        "WhySellTitle":"Why sell at STLA?",
+
+        "howworks1": "Register Online",
+        "howworksText1": "Create your free account here:",
+        "howworksText2": "Once you submit your registration, our team will review and approve your account.",
+
+        "howworks2":"Fill our Buyer Registration Form",
+        "downLink":"Click here to download.",
+        "howworksText4":"Once you complete the form, we will proceed with the registration and conduct the required credit check.",
+
+        "howworks3": "Get Ready to Bid",
+        "howworksText5": "You’ll receive a confirmation with your bidder number and login details. On sale day, just log in and join the live stream.",
+
+        "howworks4":"Bid in Real Time",
+        "howworksText6":"Watch the auction, follow the lots, and place your bids with one click — just like being at the sale barn.",
+
+        "howworks5":"Whether you’re buying from the ranch or on the road, our online platform makes it easy, fast, and reliable to stay connected with every sale.",
+        "howworksText7":"Need help registering?",
+        "howworksText8":"Contact us at",
+        "howworksText9":"or",
+
+
+        "sellingProcessTitle":"SELLING PROCESS",
+        "sellingSubTitle1":"How We Prepare Your Cattle for Auction",
+        "sellingSubTitle2":"From Ranch to Ring, taking Cattle to Santa Teresa Livestock Auction",
+        "sell1":"Cattle Reception",
+        "sellText1":"Approved cattle are organized into uniform lots to appeal to buyers.",
+        "sell2":"Recovery & Feeding",
+        "sellText2":"Quality fresh feed is provided all day to help cattle regain shrink weight after transport. We recommend that you bring your cattle at least 2 days prior to sale.",
+        "sell3":"Sale Scheduling",
+        "sellText3":"Lots are arranged for auction order, and videos are sent to registered buyers for promotion.",
+        "sell4":"Auction Day",
+        "sellText4":"Cattle are handled with minimal stress in a controlled environment, ensuring top presentation and behavior.",
+        "sell5":"Pay Day",
+        "sellText5":"Quick seamless payouts, every time. Your funds are transferred to your selected account the next business day according to USDA guidelines.",
+
+
+        "whySell1":"Fast and Secure Payment",
+        "whySellText1":"Receive your payment the next business day, directly to your bank account—simple and hassle–free.",
+        "whySell2":"Higher Value Recovery",
+        "whySellText2":"We help you maximize your cattle’s value by reducing shrink losses and ensuring a fair evaluation.",
+        "whySell3":"More Buyers, Better Offers",
+        "whySellText3":"Your cattle gain access to a wide network of serious buyers ready to offer the best price.",
+        "whySell4":"Presentation that Highlights Your Cattle",
+        "whySellText4":"We prepare and classify your cattle to showcase their best qualities, making your lot stand out to buyers.",
+        "whySell5":"Full Transparency on Fees and Deductions",
+        "whySellText5":"All charges are clearly explained beforehand so there are no surprises at the time of final sale.",
+        "whySell6":"Prices are set per pound and announced at the end of the sale",
+        "whySell7":"NO FIXED TABLE APPLIES",
+
+        "WhySellTitlePage":"WHY SELL AT STLA?",
+        "whySellText":"Since 2017, STLA has been the trusted place for producers to sell mexican cattle. We provide strong markets, reliable service, and a seamless selling experience from start to finish, proudly working alongside with the USDA and the Union Ganadera Regional de Chihuahua.",
+
+
+        "marketTitle":"MARKET REPORTS",
+        "marketText1":"Posted weekly on our Facebook page.",
+        "marketText2":"Follow us for the latest cattle prices and market reports.",
+        "botonFacebook":"Visit our Facebook page",
+
+
+        "calendarTitle":"CALENDAR"
+
+    },
+
+    "en": {
+        "idiomaToggle": "./imgs/flagUS.webp",
+
+        "homeNav": "Inicio",
+        "aboutUsNav": "Sobre Nosotros",
+        "teamNav": "Nuestro Equipo",
+        "servicesNav": "Servicios",
+        "whySellNav":"¿Por qué vender en STLA?",
+        "onlineNav": "Subasta en línea",
+        "sellingNav":"Proceso de Venta",
+        "marketReportsNav":"Reportes de Mercado",
+        "calendarNav":"Calendario",
+
+        "subTitleHome": "La única Subasta de Ganado Mexicano en los Estados Unidos.",
+
+        "aboutIntroText": "Santa Teresa Livestock Auction es la única subasta internacional de ganado en los Estados Unidos — que se enorgullece de especializarse en ganado de recría y engorda proveniente de México.",
+        "aIntroText": "Conoce Más",
+
+        "ourServicesTitle": "Nuestros Servicios",
+        "ourServicesText": "Operando con la eficiencia, transparencia e integridad que nos definen, ofrecemos un conjunto completo de servicios diseñados para facilitar el comercio internacional de ganado.",
+        "ourServicesA": "Conoce Más",
+
+        "bidOnlineText": "Ver en Línea / Comprar en Línea",
+
+        "slogan1": "Donde el buen ganado se encuentra con los buenos compradores.",
+
+        "membersOfTittle": "Somos orgullosos miembros de:",
+        "proudlyWorkingTitle": "Concesión de:",
+
+        "contactInfoTitle": "Contacto",
+        "envianosMensaje": "Envíanos un mensaje",
+        "name": "Nombre *",
+        "email": "Email *",
+        "phone": "Teléfono *",
+        "message": "Mensaje *",
+        "send": "Enviar",
+
+        "slogan2": "Donde la Frontera es solo el Comienzo.",
+
+
+        "aboutUsTitle":"SOBRE NOSOTROS",
+        "titleAboutUs": "Su Puerta de Entrada a EE.UU. para el Ganado de Engorda Mexicano.",
+        "textAboutUs": "Santa Teresa Livestock Auction es la única subasta internacional de ganado en los Estados Unidos — que se enorgullece de especializarse en ganado de recría y engorda proveniente de México.",
+        "textAboutUs2":"Somos una empresa propiedad de productores, que opera bajo un contrato de concesión administrado por experimentados operadores ganaderos estadounidenses, garantizando que cada transacción se maneje con profesionalismo, transparencia y eficiencia. Nos aseguramos de que su ganado esté en las mejores manos proporcionando alimento fresco de alta calidad, elaborado con los mejores ingredientes disponibles en la región. Todo el ganado vendido a través de nuestra subasta se encuentra en el lado estadounidense, tras haber pasado rigurosas inspecciones sanitarias realizadas tanto por las autoridades mexicanas como por el USDA.",
+
+        "guaranteedTitle": "Salud Garantizada.",
+        "guaranteedTitle2": "Listo para Enviar.",
+        "guaranteedText": "Esto garantiza que cada animal cumple con los más altos estándares sanitarios y de exportación — listo para la compra y listo para el envío.“Con años de experiencia transfronteriza, conectamos a productores y compradores con integridad, eficiencia y confianza.”",
+
+        "misionTitle": "Misión",
+        "misiontext": "Conectar a los productores de ganado mexicanos con los compradores estadounidenses a través de un mercado confiable, eficiente y amigable con la frontera, que fortalece el comercio internacional y apoya a la industria ganadera en ambos lados de la frontera.",
+        "visionTitle": "Visión",
+        "visiontext": "Unir a productores, compradores y comunidades a través de las fronteras mediante el comercio honesto, el trabajo duro y una pasión compartida por la industria ganadera.",
+
+        "auctionScheduleTitle": "Calendario de Subastas",
+        "auctionScheduleSubtitle": "Subastas Semanales de Ganado – Vaquillas y Novillos Mexicanos",
+        "auctionScheduleText1": "Martes: 11:00 A.M. M.S.T (Estacional)",
+        "auctionScheduleText2": "Viernes: 11:00 A.M. M.S.T",
+        "auctionScheduleBtn": "Visitar subastas de ganado",
+
+        "ourTeamTitle":"NUESTRO EQUIPO",
+        "textTeam": "Conozca al dedicado equipo detrás de Santa Teresa Livestock Auction, unido por la pasión por la ganadería y el compromiso con el comercio honesto y el trabajo duro a través de las fronteras.",
+        "officeManager": "Gerente de Oficina",
+        "livestockManager": "Gerente de Operaciones Ganaderas",
+        "auctionSpecialist": "Especialista en Administración de Subastas",
+        "cattleTrade": "Especialista en Relaciones Comerciales de Ganado",
+
+
+
+        "servicesTitle": "SERVICIOS",
+        "textServices":"Gestionamos cada detalle de la transacción transfronteriza. Nuestros servicios cubren toda la logística, el cumplimiento normativo y el procesamiento financiero para garantizar una operación transparente, eficiente y confiable para compradores y productores.",
+        "ExportText":"Requisitos de Exportación para Ganado Mexicano.",
+        "CattleText":"Clasificación de Ganado.",
+        "HaulingText":"Logística de Transporte para Vendedores y Compradores.",
+        "OnlineText":"Soporte para Pujas en Línea.",
+        "PaymentsText":"Gestión de todos los pagos (Agencias Aduanales, Veterinario, New Mexico Livestock Board y Unión Ganadera Regional de Chihuahua) para operaciones fluidas y confiables.",
+        "HealthText":"Certificados Sanitarios y Soporte de Documentación.",
+        "CattleProfessionallyText":"Su ganado comercializado profesionalmente ante compradores presenciales y en línea de todo Estados Unidos.",
+
+
+
+        "onlineBiddingTitle":"SUBASTA EN LÍNEA",
+        "buyTittle": "Compre y Venda ganado — desde cualquier lugar.",
+        "buyText": "En Santa Teresa Livestock Auction, no tiene que estar presencialmente para comprar. Nuestra Plataforma en Línea le permite ver la subasta en vivo y comprar en tiempo real de forma segura desde su teléfono, tableta o computadora.",
+        "howKorksTitle":"¿Cómo funciona?",
+        "sellingTitle":"Proceso de Venta",
+        "WhySellTitle":"¿Por qué vender en STLA?",
+
+        "howworks1": "Regístrese en Línea",
+        "howworksText1": "Cree su cuenta gratuita aquí:",
+        "howworksText2": "Una vez que envíe su registro, nuestro equipo revisará y aprobará su cuenta.",
+
+        "howworks2":"Complete nuestro Formulario de Registro de Comprador",
+        "downLink":"Haga clic aquí para descargar.",
+        "howworksText4":"Una vez que complete el formulario, procederemos con el registro y realizaremos la verificación de crédito requerida.",
+
+        "howworks3": "Prepárese para comprar",
+        "howworksText5": "Recibirá una confirmación con su número de comprador y sus datos de acceso. El día de la subasta, simplemente inicie sesión y únase a la transmisión en vivo.",
+
+        "howworks4":"Compre en Tiempo Real",
+        "howworksText6":"Vea la subasta, siga los lotes y haga sus pujas con un solo clic — justo como si estuviera en la sala de subastas.",
+
+        "howworks5":"Ya sea que esté comprando desde el rancho o mientras viaja, nuestra plataforma en línea hace que sea fácil, rápido y confiable mantenerse conectado con cada subasta.",
+        "howworksText7":"¿Necesita ayuda para registrarse?",
+        "howworksText8":"Contacta con nosotros en",
+        "howworksText9":"o",
+
+
+        "sellingProcessTitle":"PROCESO DE VENTA",
+        "sellingSubTitle1":"¿Cómo Preparamos Su Ganado para la Subasta?",
+        "sellingSubTitle2":"Del Rancho a la Báscula: Llevando Ganado a Santa Teresa Livestock Auction",
+        "sell1":"Recepción en el Corral de Subasta",
+        "sellText1":"El ganado aprobado se organiza en lotes uniformes para que sean atractivos a los compradores.",
+        "sell2":"Recuperación y Alimentación",
+        "sellText2":"Se proporciona pastura fresca todo el día para ayudar al ganado a recuperar peso después del transporte. Se recomienda la llegada con al menos 2 días de anticipación.",
+        "sell3":"Programación de la Venta",
+        "sellText3":"Los lotes se organizan y se envían videos a los compradores registrados para su promoción.",
+        "sell4":"Día de la Subasta",
+        "sellText4":"El ganado se maneja con el mínimo estrés en un entorno controlado, garantizando una presentación óptima.",
+        "sell5":"Día de Pago",
+        "sellText5":"Pagos rápidos y sin complicaciones, siempre. Sus fondos se transfieren a la cuenta de su elección al siguiente día hábil, de acuerdo con los lineamientos del USDA.",
+
+        "whySell1":"Pago Rápido y Seguro",
+        "whySellText1":"Reciba su pago al siguiente día hábil, directamente en su cuenta bancaria—simple y sin complicaciones.",
+        "whySell2":"Mayor Recuperación",
+        "whySellText2":"Le ayudamos a maximizar el valor de su ganado reduciendo las pérdidas por merma (pérdida de peso) y asegurando una evaluación justa.",
+        "whySell3":"Más Compradores, Mejores Ofertas",
+        "whySellText3":"Su ganado obtiene acceso a una amplia red de compradores serios y preparados para ofrecer el mejor precio.",
+        "whySell4":"Presentación que Destaca Su Ganado",
+        "whySellText4":"Preparamos y clasificamos su ganado haciendo que su lote destaque ante los compradores",
+        "whySell5":"Transparencia Total en Comisiones y Deducciones",
+        "whySellText5":"Todos los cargos se explican claramente de antemano para que no haya sorpresas al momento de la venta final.",
+        "whySell6":"Los precios se fijan por libra y se anuncian al final de la venta",
+        "whySell7":"NO SE APLICA TABLA FIJA",
+
+
+        "WhySellTitlePage":"¿POR QUÉ VENDER EN STLA?",
+        "whySellText":"Desde 2017, STLA ha sido el lugar de confianza para que los productores vendan ganado mexicano. Ofrecemos mercados sólidos, un servicio confiable y una experiencia de venta fluida de principio a fin, trabajando orgullosamente junto con el USDA y la Unión Ganadera Regional de Chihuahua.",
+
+
+        "marketTitle":"REPORTES DE MERCADO",
+        "marketText1":"Publicado semanalmente en nuestra página de Facebook.",
+        "marketText2":"Síganos para conocer los últimos precios del ganado y reportes de mercado.",
+        "botonFacebook":"Visite nuestra página de Facebook",
+
+        "calendarTitle":"CALENDARIO"
+
+    }
+}

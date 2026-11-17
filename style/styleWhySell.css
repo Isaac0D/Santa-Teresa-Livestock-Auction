@@ -1,0 +1,1073 @@
+/*-------------------------------- root --------------------------------*/
+:root{
+    --white: #d3d3d3;
+    --black: #000000;
+
+    --redSa: #AD2A30;
+    --red: #DD0B2A;
+    --yellow: #FFB222;
+    --orange: #F58F21;
+    --redSa2: #B94538;
+    --brown:#552F1A;
+
+    --fs--SuperTitle: clamp(52px, calc(2.8vw + 1.8rem), 80px);
+    --fs--Title: clamp(40px, calc(2.2vw + 1.2rem), 68px);
+    --fs--SubTitle: clamp(30px, calc(1vw + 1.2rem), 46px);
+    --fs--Text: clamp(1.4rem, 2.6vw, 1.725rem);
+    --fs--TextNav: 	clamp(1rem, 1.7vw, 1.2rem);
+}
+
+@font-face {
+    font-family: 'latoRegular';
+    src: url(./Lato-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'latoBlack';
+    src: url(./Lato-Black.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'arvo';
+    src: url(./Arvo-Bold.ttf);
+    font-display: swap;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+p:hover{
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*-------------------------------- Scroll Bar --------------------------------*/
+/* Works on Firefox */
+* {
+    scrollbar-width:thin;
+    scrollbar-color: var(--brown) var(--white);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--brown);
+    border-radius: 0px;
+    border: 0px solid var(--white);
+}
+
+.reveal-home {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+
+.reveal-home.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*-------------------------------- loader --------------------------------*/
+#hiddenBody{
+    overflow:hidden;
+}
+
+#loader {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100lvh;
+    background:var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    transition: opacity 0.3s ease;
+}
+
+.logoLoader{
+    width: 10vw;
+    animation: breathe 2s ease-in-out infinite;
+}
+
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.05); 
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+#loader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+/*-------------------------------- nav --------------------------------*/
+.navSelected{
+    color: var(--yellow) !important;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 800;
+    padding-bottom: 20px;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0) 100%);
+
+
+    transition: all 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%);
+    background-color: var(--brown);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logoNav{
+    width: 5%;
+    object-fit: contain;
+    margin-left: 9vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-scroll{
+    width: 4%;
+}
+
+/*-------------------------------- Menu Trigger--------------------------------*/
+.menu-trigger {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-left: 2.5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    z-index: 801; 
+}
+
+.menu-trigger img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+    backface-visibility: hidden; 
+}
+
+.menu-trigger img:first-child {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.menu-trigger img:last-child {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+}
+
+.menu-trigger.is-active img:first-child {
+    opacity: 0;
+    transform: rotate(180deg) scale(0.5);
+}
+
+.menu-trigger.is-active img:last-child {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100vh;
+    background-color: var(--brown);
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 700;
+
+    box-shadow: 3px 0px 5px 1px rgba(25, 25, 24, 0.26);
+    -webkit-box-shadow: 3px 0px 5px 1px rgba(25, 25, 24, 0.26);
+    -moz-box-shadow: 3px 0px 5px 1px rgba(25, 25, 24, 0.26);
+}
+
+.mobile-nav ul {
+    list-style: none;
+    margin: 0px;
+    margin: auto;
+    padding: 0px;
+    margin-left: 2.5vw;
+}
+
+.mobile-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--fs--Text);
+    font-family: 'latoBlack';
+    display: block;
+    padding: 1rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav a:hover{
+    color: var(--orange);
+    font-size: calc(var(--fs--Text) + 4px);
+    transition: all 0.3s ease;
+}
+
+.mobile-nav.is-active {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.logoNavMov{
+    display: none;
+}
+
+
+/*-------------------------------- botonLenguaje --------------------------------*/
+.divIdiomaContactContainer{
+    display: flex;
+    gap: 30px;
+    z-index: 701;
+    margin-right: 2.5vw;
+}
+
+.language-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.flag-icon {
+    width: 70px;
+    height: auto;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--redSa); /* Color gris cuando está a la izquierda (EN) */
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 10px;
+    bottom: 4px;
+    background-color: var(--white);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--orange);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px); /* Mueve el círculo a la derecha */
+}
+
+
+/*-------------------------------- contactUsNav --------------------------------*/
+.contactUsNav{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: var(--fs--TextNav);
+    font-family: 'latoBlack';
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contactUsNav:hover{
+    color: var(--orange);
+}
+
+
+/*-------------------------------- home --------------------------------*/
+.video-contenedor{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; 
+}
+
+.video-contenedor::before {
+    content: ''; 
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: lab(0% 0 0 / 0.5);
+
+    z-index: 0;
+}
+
+.video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+/* 3. El contenido de encima */
+.contenido-encima {
+    /* Asegura que el contenido esté por encima del video */
+    /* (Aunque z-index: -1 en el video suele ser suficiente, 
+       esto lo hace más robusto) */
+    position: absolute;
+    z-index: 1;
+    
+    /* Solo para centrar el texto de ejemplo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: var(--white);
+}
+
+.titleHome{
+    font-size: var(--fs--SuperTitle);
+    font-family: 'arvo';
+    text-align: center;
+    color: var(--white);
+    margin: 0px;
+}
+
+.subTitleHome{
+    font-size: var(--fs--SubTitle);
+    font-family: 'arvo';
+    text-align: center;
+    color: var(--white);
+    margin: 0px;
+    width: 25%;
+}
+
+.contenidoAbajo{
+    position: relative;
+}
+
+
+/*-------------------------------- buytextContainer --------------------------------*/
+.buytextContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.buytitle{
+    margin: auto;
+    font-size: var(--fs--SubTitle);
+    font-family: 'arvo';
+    color: var(--black);
+}
+
+.buyText{
+    margin: auto;
+    font-size: var(--fs--Text);
+    width: 45%;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'latoRegular';
+}
+
+
+/*-------------------------------- HowItWorks --------------------------------*/
+#seccion1.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.howWorksTitle{
+    font-size: var(--fs--SubTitle);
+    margin: auto;
+    text-align: center;
+    font-family: 'arvo';
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: var(--black);
+}
+
+.howWorksListContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 10%;
+}
+
+.howWorksElement{
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.howWorksStep {
+    background-color: var(--redSa);
+    color: var(--white);
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.stepNumber {
+    font-family: 'arvo';
+    margin: 0;
+    font-size: var(--fs--Title); 
+    line-height: 1;
+}
+
+.howWorksContent {
+    background-color: var(--redSa);
+    color: var(--white);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex: 1;
+    display: flex;
+    align-items: center; 
+}
+
+.infoContainer{
+    flex: 1;
+    padding-left: 40px;
+}
+
+.howWorksElementText{
+    margin: 0;
+    font-size: var(--fs--Text);
+    font-family: 'latoBlack';
+    width: 90%;
+}
+
+.titleHowWorks{
+    font-size: var(--fs--SubTitle);
+}
+
+.howWorksElementTextSub{
+    font-family: 'latoRegular';
+    width: 90%;
+    margin-top: 8px;
+}
+
+.howWorksElementTextSub a{
+    color: var(--orange);
+}
+
+.howWorksElementTextSub a:hover{
+    color: var(--white);
+}
+
+.howWorksElementSubTitle{
+    margin: 0;
+    margin-top: 20px;
+    font-size: var(--fs--TextNav);
+    font-family: 'latoRegular';
+    width: 90%;
+}
+
+.icoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.icoImg{
+    height: 100px; 
+    width: auto;
+}
+
+.stepColor2{
+    background-color: var(--redSa2);
+}
+
+.stepColor3{
+    background-color: var(--redSa);
+}
+
+.stepColor4{
+    background-color: var(--orange);
+}
+
+.aFillColor a{
+    color: var(--white);
+}
+
+.aFillColor a:hover{
+    color: var(--yellow);
+}
+
+.note{
+    background-color: var(--red);
+    width: 85vw;
+    margin: auto;
+    color: var(--white);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.noteText{
+    font-family: 'latoRegular';
+    font-size: var(--fs--TextNav);
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.noteTitle{
+    font-family: 'arvo';
+    font-size: var(--fs--SubTitle);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.noteTitle2 {
+    color: var(--white);
+}
+
+.noteA:hover{
+    color: var(--yellow);
+}
+
+
+
+
+.oneLineP{
+    display: flex;
+    max-width: fit-content;
+}
+
+.oneLinePP{
+    margin-right: 10px;
+    max-width: fit-content;
+}
+
+.oneLinePPP{
+    margin-right: 10px;
+    padding-left: 10px;
+    max-width: fit-content;
+}
+
+.oneLinePa{
+    color: var(--orange);
+    padding-left: 0px;
+    text-align: left;
+    max-width: fit-content;
+    margin-top: auto;
+}
+
+.oneLinePa:hover{
+    color: var(--white);
+}
+
+.oneLinePaa{
+    color: var(--brown);
+    padding-left: 0px;
+    text-align: left;
+    max-width: fit-content;
+}
+
+.oneLinePaa:hover{
+    color: var(--white);
+}
+
+.oneLineP2{
+    margin: auto;
+}
+
+
+
+.fillTitle{
+    margin-bottom: 8px;
+}
+
+.whySellText {
+    margin: 0;
+    margin-top: 0px;
+    font-size: var(--fs--Text);
+    font-family: 'latoRegular';
+    margin-top: 8px;
+    width: 85%;
+}
+
+/*-------------------------------- footer --------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--brown);
+    padding-top: 10%;
+    padding-left: 2.5%;
+}
+
+.contactFooterTitle{
+    font-size: var(--fs--SubTitle);
+    font-family: 'arvo';
+    margin: 0;
+    margin-bottom: 18px;
+    color: var(--white);
+}
+
+.textFooter{
+    font-size: var(--fs--Text);
+    font-family: 'latoBlack';
+    display: block;
+    color: var(--white);
+    width: max-content;
+    margin-bottom: 12px;
+}
+
+.textFooter:hover{
+    color: var(--orange);
+}
+
+.logoFooter{
+    width: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.copyFooter{
+    font-size: var(--fs--TextNav);
+    font-family: 'latoRegular';
+    color: var(--white);
+    margin-bottom: 50px;
+}
+
+.svgFooter{
+    margin-right: 10px;
+}
+
+
+/*-------------------------------- responsive --------------------------------*/
+@media screen and (max-width: 1730px){
+
+}
+
+
+@media screen and (max-width: 1200px){
+    /*-------------------------------- buytextContainer --------------------------------*/
+    .buyText{
+        width: 65%;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    /*-------------------------------- HowItWorks --------------------------------*/
+    .howWorksListContainer{
+        gap: 40px;
+        margin-bottom: 10%;
+    }
+
+    .howWorksElement{
+        width: 95vw;
+    }
+
+    .howWorksStep {
+        width: 120px;
+        margin-right: 20px;
+    }
+
+    .infoContainer{
+        padding-left: 30px;
+    }
+
+    .howWorksElementText{
+        width: 95%;
+    }
+
+    .note{
+        width: 95vw;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .noteTitle{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    /*-------------------------------- buytextContainer --------------------------------*/
+    .buytextContainer{
+        padding-bottom: 10%;
+    }
+
+    .buyText{
+        width: 90%;
+        text-align: left;
+    }
+
+
+    /*-------------------------------- HowItWorks --------------------------------*/
+    .howWorksTitle{
+        width: 90%;
+    }
+
+
+    /*-------------------------------- HowItWorks --------------------------------*/
+    .howWorksListContainer{
+        gap: 40px;
+    }
+
+    .howWorksElement{
+        width: 90vw;
+        align-items: center;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .howWorksStep {
+        margin-right: 0px;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .howWorksContent {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex: 1;
+        align-items: center;
+    }
+
+    .infoContainer{
+        flex: 1;
+        padding-left: 0px;
+    }
+
+    .howWorksElementText{
+        margin: 0;
+        width: 95%;
+    }
+
+
+    .howWorksElementTextSub{
+        width: 90%;
+        margin-top: 8px;
+    }
+
+    .note{
+        width: 90vw;
+    }
+
+    .noteTitle {
+        text-align: left;
+    }
+
+    .titleHowWorks{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+
+    }
+
+    .whySellText {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+
+/*-------------------------------- responsiveCom--------------------------------*/
+@media screen and (max-width: 1800px) {
+    /*-------------------------------- nav --------------------------------*/
+    .logoNav{
+        margin-left: 9.5vw;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    /*-------------------------------- nav --------------------------------*/
+    .logoNav{
+        margin-left: 12.8vw;
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+
+    /*-------------------------------- nav --------------------------------*/
+    .logoNav{
+        width: 6.5%;
+        margin-left: 13.5vw;
+    }
+
+    .logo-scroll{
+        width: 5.5%;
+    }
+
+
+    /*-------------------------------- footer --------------------------------*/
+    .logoFooter{
+        width: 12%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px){
+    /*-------------------------------- nav --------------------------------*/
+    .logoNav{
+        width: 8%;
+        margin-left: 15vw;
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+
+    /*-------------------------------- loader --------------------------------*/
+    .logoLoader{
+        width: 20vw;
+    }
+
+    /*-------------------------------- nav --------------------------------*/
+    .logoNav{
+        width: 8%;
+        margin-left: 14.8vw;
+    }
+
+    .logo-scroll{
+        width: 6%;
+    }
+
+    /*-------------------------------- Menu Trigger--------------------------------*/
+    .menu-trigger {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        margin-left: 2.5vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        cursor: pointer;
+        z-index: 801; 
+    }
+
+
+    .mobile-nav {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .mobile-nav ul{
+        padding-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    /*-------------------------------- nav --------------------------------*/
+    .logoNav{
+        width: 10%;
+        margin-left: 16.5vw;
+    }
+
+    .logo-scroll{
+        width: 8%;
+    }
+
+    /*-------------------------------- Menu Trigger--------------------------------*/
+    .menu-trigger {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        margin-left: 2.5vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        cursor: pointer;
+        z-index: 801; 
+    }
+
+
+    .mobile-nav {
+        z-index: 705;
+        width: 60vw;
+    }
+
+    .mobile-nav ul{
+        padding-top: 50px;
+    }
+
+
+
+    /*-------------------------------- botonLenguaje --------------------------------*/
+    .flag-icon {
+        width: 60px;
+        height: auto;
+    }
+
+
+    /*-------------------------------- footer --------------------------------*/
+    .logoFooter{
+        width: 16%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+
+    /*-------------------------------- loader --------------------------------*/
+    .logoLoader{
+        width: 30vw;
+    }
+
+    .logoNav{
+        display: none;
+    }
+
+
+    /*-------------------------------- Menu Trigger--------------------------------*/
+    .menu-trigger {
+        width: 55px;
+        height: 55px;
+        margin-left: 2.5vw;
+    }
+
+
+    .mobile-nav {
+        width: 100vw;
+    }
+
+    .mobile-nav ul {
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .mobile-nav a {
+        padding: 0.8rem 0;
+    }
+
+    .logoNavMov{
+        display: block;
+        width: 20%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+
+    /*-------------------------------- botonLenguaje --------------------------------*/
+    .flag-icon {
+        width: 55px;
+    }
+
+    /*-------------------------------- home --------------------------------*/
+    .titleHome{
+        width: 90%;
+    }
+
+    /*-------------------------------- footer --------------------------------*/
+    .logoFooter{
+        width: 20%;
+    }
+}
